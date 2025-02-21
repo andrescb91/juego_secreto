@@ -15,12 +15,12 @@ function textoElementoHtml(elemento,texto){
 
 function obtenerNumeroSecreto(){
        let numeroGenerado= Math.trunc((Math.random()*numeroMaximo)+1);
-        console.log(numeroGenerado);
-        console.log(numeroSorteado);
-        console.log(`Intentos ${numeroIntentos}`);
+        //console.log(numeroGenerado);
+        //console.log(numeroSorteado);
+        //console.log(`Intentos ${numeroIntentos}`);
 
        if(numeroSorteado.length==numeroMaximo){
-            console.log("Se sortearon todos los numeros posibles");
+            //console.log("Se sortearon todos los numeros posibles");
             textoElementoHtml('p',`Se sortearon todos los numeros posibles, Acerteste en ${numeroAcertados} de ${numeroMaximo} numeros`);
             let butonReiniciar=document.getElementById('reiniciar');
             butonReiniciar.innerHTML='Nueva Partida';
@@ -41,7 +41,7 @@ function obtenerNumeroSecreto(){
 function verificarIntento(){
     let numeroUsuario=parseInt(document.getElementById('valorUsuario').value);
     if(numeroIntentos==intentosMaximos){
-        console.log("Se terminaron el numero de intentos, adivina un nuevo numero");
+        //console.log("Se terminaron el numero de intentos, adivina un nuevo numero");
         textoElementoHtml('p','Se terminaron el numero de intentos, adivina un nuevo numero');
         reiniciarIntentoJuego();
         return
