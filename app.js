@@ -21,7 +21,7 @@ function obtenerNumeroSecreto(){
 
        if(numeroSorteado.length==numeroMaximo){
             //console.log("Se sortearon todos los numeros posibles");
-            textoElementoHtml('p',`Se sortearon todos los numeros posibles, Acerteste en ${numeroAcertados} de ${numeroMaximo} numeros`);
+            textoElementoHtml('p',`Se sortearon todos los numeros. Aciertos ${numeroAcertados} de ${numeroMaximo} numeros posibles`);
             let butonReiniciar=document.getElementById('reiniciar');
             butonReiniciar.innerHTML='Nueva Partida';
             numeroIntentos=0;
